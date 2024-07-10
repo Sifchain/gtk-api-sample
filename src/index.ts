@@ -9,7 +9,7 @@ import {
 } from "@sifchain/gtk-api";
 
 export async function main() {
-  // Initialize the APIClientWrapper
+  // // Initialize the APIClientWrapper
   // const network = "mainnet"; // Replace with the appropriate network
   // const wallet: DirectSecp256k1HdWallet =
   //   await DirectSecp256k1HdWallet.fromMnemonic(
@@ -19,7 +19,8 @@ export async function main() {
   //     }
   //   );
   // const client = await APIClientWrapper.create(wallet, network);
-  // Call placeOrder method
+  // console.log("APIClientWrapper created ", client);
+  // // Call placeOrder method
   // const trade = await client.placeOrder(
   //   "uusdc", // collateralTokenType
   //   0.01, // tokenAmount
@@ -28,31 +29,31 @@ export async function main() {
   //   5, // leverage
   //   40000, // stopLoss or null
   //   75000, // takeProfit or null
-  //   71000 // limit_price
+  //   null // limit_price
   // );
   // console.log("Place Order:", trade);
-  // Call closeOrder method
-  // const closedTrade = await client.closeOrder(1623); // Use a mock orderId
+  // // Call closeOrder method
+  // const closedTrade = await client.closeOrder(1634); // Use a mock orderId
   // console.log("Close Order:", closedTrade);
-  // Call cancelOrder method
-  // const cancelledTrade = await client.cancelOrder(1630); // Use a mock orderId
+  // // Call cancelOrder method
+  // const cancelledTrade = await client.cancelOrder(1637); // Use a mock orderId
   // console.log("Cancel Order:", cancelledTrade);
-  // Call getCurrentInterestRate method
+  // // Call getCurrentInterestRate method
   // const interestRate = await client.getCurrentInterestRate("btc");
   // console.log("Current Interest Rate:", interestRate);
-  // Call getTrades method
+  // // Call getTrades method
   // const trades = await client.getTrades(
   //   TradeDirectionEnum.LONG, // tradeType
   //   TradeStatusEnum.ACTIVE // status
   // );
   // console.log("Get Trades:", trades);
-  // Call getTrade method
-  // const tradeDetails = await client.getTrade(123); // Use a mock tradeId
+  // // Call getTrade method
+  // const tradeDetails = await client.getTrade(1631); // Use a mock tradeId
   // console.log("Get Trade:", tradeDetails);
-  // Call getTopMatch method
+  // // Call getTopMatch method
   // const topMatch = await client.getTopMatch("uusdc", 10);
   // console.log("Top Match:", topMatch);
-  // Call getPnl method
+  // // Call getPnl method
   // const pnl = await client.getPnl(PnlTypeEnum.REALIZED);
   // console.log("PnL:", pnl);
 }
